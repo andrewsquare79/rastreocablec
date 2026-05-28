@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Prysmian Tracking</title>
+
 <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
 
-<header class="header">
-    <img src="logo.png" class="logo" alt="Prysmian Logo">
-    <div>
-        <h1>Portal de Tracking Logístico</h1>
-        <p>Consulta el estado de tu despacho</p>
-    </div>
+<header>
+
+<img src="logo.png" class="logo">
+
+<div>
+<h1>Portal de Consulta</h1>
+<p>Estado de despacho</p>
+</div>
+
 </header>
 
 <section class="hero">
-    <div class="hero-content">
-        <h2>Seguimiento de Despachos</h2>
-        <p>Experiencia inspirada en el estilo visual corporativo de Prysmian.</p>
 
-        <div class="search-card">
-            <input type="text" placeholder="Destinatario o Documento">
-            <input type="password" placeholder="Password">
-            <button>Consultar</button>
-        </div>
-    </div>
+<div class="search-card">
+
+<h2>Consultar Documento</h2>
+
+<input
+type="text"
+id="documento"
+placeholder="Ingrese N° Documento"
+>
+
+<input
+type="password"
+id="password"
+placeholder="Password"
+>
+
+<button onclick="consultarDocumento()">
+Consultar
+</button>
+
+</div>
+
 </section>
 
-<section class="results">
-    <div class="card">
-        <div class="status">EN TRÁNSITO</div>
-        <h3>Documento: 123456</h3>
-        <p>Destino: Quito</p>
-        <p>Fecha estimada: 28/05/2026</p>
+<section id="resultado"></section>
 
-        <div class="timeline">
-            <div class="step complete">Pedido</div>
-            <div class="step complete">Preparación</div>
-            <div class="step active">Tránsito</div>
-            <div class="step">Entrega</div>
-        </div>
-    </div>
-</section>
-
-<footer>
-    Prysmian Tracking Portal
-</footer>
+<script src="script.js"></script>
 
 </body>
 </html>
